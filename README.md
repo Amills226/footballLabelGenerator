@@ -12,6 +12,7 @@ tensorboard==2.3.0
 
 tensorflow==2.3.1 
 
+Other requirements can be found in requirements.txt
 
 ## Chapter 1 Set up 
 
@@ -41,10 +42,12 @@ Run 'python Train_YOLO4.py' to train the model. There will be a lot of output to
 
 Don't worry if it outputs Early stopping and then an error message. The "early stopping" is a good thing, it just doesn't deal with it very gracefully.
 
-## Chapter 3 Test Images
+## Chapter 3 - Other Images
 
-For getting results on more data, put it into Data/Source_Images/Test_Images. The detector can handle videos as well as still images of most standard formats, although videos will take longer to detect (as they are comprised of a lot of frames). A 4:30 minute video takes about 5 minutes to process. Images are generally processed in an average of 0.05 seconds
+For getting results on more data, put it into Data/Source_Images/Test_Images. The detector can handle videos as well as still images of most standard formats, although videos will take longer to detect (as they are comprised of a lot of frames). A 4:30 minute video takes about 5 minutes to process. Images are generally processed in an average of 0.05 seconds.
 
-From 3_Inference, run `python Detector.py --postfix _detected`. Feel free to use anything you like instead of _detected; it's just that the default argument is _catface (yes, something to clean up out of the code), and that is likely unrelated to your project. Again, there is a lot of output to the screen.
+From 3_Inference, run `python Detector.py --postfix _detected`. Feel free to use anything you like instead of \_detected; it's just that the default argument is \_catface (yes, something to clean up out of the code), and that is likely unrelated to your project. Again, there is a lot of output to the screen.
 
 ## Chapter 4
+
+To get the average confidence on the new set of images, run `python get_average_accuracy.py` from 4_Analysis. A csv file will be output to 4_Analysis with the average confidence for each image file. The mean of those average confidences will be printed to the terminal as well.
