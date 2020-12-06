@@ -12,7 +12,7 @@ tensorboard==2.3.0
 
 tensorflow==2.3.1 
 
-Other requirements can be found in requirements.txt
+Other requirements can be found in `requirements.txt`
 
 ## Chapter 1 Set up 
 
