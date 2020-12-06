@@ -1,4 +1,4 @@
-# Soccer Label Generator
+# Football Label Generator
 
 ##### ReadMe
 
