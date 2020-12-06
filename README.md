@@ -1,6 +1,6 @@
-# Football Label Generator
-
 ##### ReadMe
+
+This is a model developed from https://github.com/AntonMu/TrainYourOwnYOLO with our own data and some modifications. The versions are named by which optimizer they use - Adam is recommended as it saw a much better performance.
 
 ## Chapter 0 Implementation Details
 
