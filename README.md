@@ -14,18 +14,24 @@ tensorflow==2.3.1
 
 Other requirements can be found in `requirements.txt`
 
+The "SoccerPlayerDetection_bmvc17_v1" dataset was used for training; the images from "ball_dataset" were used in `Test_Images`.
+
 ## Chapter 1 Set up 
 
 *Folder names from the original model were kept for simplicity*
-Choose a model. As stated above, we recommend Adam for performance reasons.
+Choose a model. As stated above, we recommend Adam for performance reasons. Both models already contain the images in the testing and training folders - no further work is needed.
 
 #### Annotation file
 
-Get all image annotations into one file named Annotations-export.csv.
-If your annotation files are in Matlab format (.mat), use `WriteAsCSV.m` file to turn them into CSV formats. Note: You will have to open `WriteAsCSV.m` and manually change the input and output file names.
+Get all image annotations into one file named `Annotations-export.csv`.
+
+If your annotation files are in Matlab format (.mat), use the `WriteAsCSV.m` file to turn them into CSV formats. Note: You will have to open `WriteAsCSV.m` and manually change the input and output file names.
+
+If you are starting from scratch with the "SoccerPlayerDetection_bmvc17_v1" dataset, this will be necessary. If you wish to train on both parts 1 and 2 of that dataset, you will need to combine the annotations into 1 file named as above.
+
 We do not have any converters for XML at this time.
 
-Put that file into Data/Source_Images/Training_Images/vott-csv-export
+Put that file into `Data/Source_Images/Training_Images/vott-csv-export`.
 
 #### Training Images 
 
@@ -33,7 +39,7 @@ You can paste images directly into the Training_Images folder, or put the direct
 
 If you are using directories, run the fix_annotations.py script from within the vott-csv-export folder.
 
-Navigate to 1_Image_Annotation and run `python Convert_to_YOLO_format.py`.
+Navigate to `1_Image_Annotation` and run `python Convert_to_YOLO_format.py`.
 
 ## Chapter 2 Begin Training
 
