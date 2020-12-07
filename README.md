@@ -16,13 +16,16 @@ Other requirements can be found in `requirements.txt`
 
 ## Chapter 1 Set up 
 
-*Folder names were kept for simplicity*
+*Folder names from the original model were kept for simplicity*
+Choose a model. As stated above, we recommend Adam for performance reasons.
 
 #### Annotation file
 
-Get all image annotations into one file named Annotations-export.csv
+Get all image annotations into one file named Annotations-export.csv.
+If your annotation files are in Matlab format (.mat), use `WriteAsCSV.m` file to turn them into CSV formats. Note: You will have to open `WriteAsCSV.m` and manually change the input and output file names.
+We do not have any converters for XML at this time.
 
-Put that into Data/Source_Images/Training_Images/vott-csv-export
+Put that file into Data/Source_Images/Training_Images/vott-csv-export
 
 #### Training Images 
 
